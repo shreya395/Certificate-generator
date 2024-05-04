@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Certificate of Appreciation</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    .certificate {
+      width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 3px solid #4CAF50;
+      background-color: #fff;
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+    }
+    .title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #4CAF50;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .content {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .details {
+      margin-top: 30px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .details p {
+      margin: 5px 0;
+    }
+    .signature {
+      text-align: center;
+      margin-top: 50px;
+      font-style: italic;
+      font-size: 24px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="certificate">
+    <div class="title">Certificate of Appreciation</div>
+    <div class="content">
+      <p>This certificate is awarded to <span id="recipientName"><%= item.name %></span> for donating <span id="donatedTrees"><%= item.trees_donated %> trees.</span></p>
+    </div>
+    <div class="details">
+      <p>Amount Donated: $<span id="donationAmount"><%= item.amount %></span></p>
+      <p>Email: <span id="recipientEmail"><%= item.email_id %></span></p>
+      <p>Phone: <span id="recipientPhone"><%= item.phone_no %></span></p>
+    </div>
+    <div class="signature">TREES🌳</div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+<!-- <div class="certificate">
+    <div class="title">Certificate of Appreciation</div>
+    <div class="content">
+      <p>This certificate is awarded to <%= item.name %> for donating <%= item.trees_donated %> trees.</p>
+    </div>
+    <div class="details">
+      <p>Amount Donated: $<%= item.amount %></p>
+      <p>Email: <%= item.email_id %></p>
+      <p>Phone: <%= item.phone_no %></p>
+    </div>
+    <div class="signature">TREES🌳</div>
+  </div>
+</body>
+</html> -->
